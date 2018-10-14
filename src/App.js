@@ -1,8 +1,18 @@
 import React, { Component } from 'react';
+import Graph from './graph';
 import logo from './logo.svg';
 import './App.css';
 
+
+
+
 class App extends Component {
+  constructor(props) {
+    super(props);
+      
+      this.state = {pieData: [{name: "Firefox",y: 6},{name: "MSIE",y: 4},{name: "Safari",y: 4},{name: "Opera",y: 1},{name: "Chrome",y: 7}]}
+
+  }
   render() {
     return (
       <div className="App">
@@ -20,6 +30,7 @@ class App extends Component {
             Learn React
           </a>
         </header>
+        <Graph/>
       </div>
     );
   }
