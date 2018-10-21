@@ -31,35 +31,6 @@ class Graph extends Component {
   }
 
   highChartsRender() {
-    // Highcharts.chart({
-    //   chart: {
-    //     type: 'pie',
-    //     renderTo: 'atmospheric-composition',
-    //     plotBackgroundColor: null,
-    //     plotBorderWidth: null,
-    //     plotShadow: false,
-    //   },
-    //   title: {
-    //     verticalAlign: 'middle',
-    //     floating: true,
-    //     text: 'Earth\'s Atmospheric Composition',
-    //     style: {
-    //       fontSize: '10px',
-    //     }
-    //   },
-    //   plotOptions: {
-    //     pie: {
-    //       dataLabels: {
-    //         format: '{point.name}: {point.percentage:.1f} %'
-    //       },
-    //       innerSize: '70%',
-    //       style: {
-    //         color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-    //       }
-    //     }
-    //   },
-    //   series: this.state.series
-    // });
     Highcharts.chart({
       chart: {
           plotBackgroundColor: null,

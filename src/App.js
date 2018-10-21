@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
 import Graph from './graph';
+import ReactCloneExample from './ReactCloneExample';
 import logo from './logo.svg';
 import './App.css';
-
-
-
 
 class App extends Component {
   constructor(props) {
     super(props);
-      
-      this.state = {pieData: [{name: "Firefox",y: 6},{name: "MSIE",y: 4},{name: "Safari",y: 4},{name: "Opera",y: 1},{name: "Chrome",y: 7}]}
-
+    this.state = { pieData: [{ name: "Firefox", y: 6 }, { name: "MSIE", y: 4 }, { name: "Safari", y: 4 }, { name: "Opera", y: 1 }, { name: "Chrome", y: 7 }] }
   }
   render() {
     return (
@@ -30,7 +26,8 @@ class App extends Component {
             Learn React
           </a>
         </header>
-        <Graph/>
+        <Graph />
+        <ReactCloneExample />
       </div>
     );
   }
